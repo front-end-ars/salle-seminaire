@@ -1,0 +1,40 @@
+{
+  "name": "ChecklistSession",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date de la session"
+    },
+    "person_name": {
+      "type": "string",
+      "description": "Nom de la personne"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "en_cours",
+        "valide"
+      ],
+      "default": "en_cours",
+      "description": "Statut de la session"
+    },
+    "validated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date et heure de validation"
+    },
+    "tasks": {
+      "type": "object",
+      "description": "\u00c9tat de toutes les t\u00e2ches coch\u00e9es",
+      "additionalProperties": {
+        "type": "boolean"
+      }
+    }
+  },
+  "required": [
+    "date",
+    "person_name"
+  ]
+}
