@@ -4,7 +4,7 @@ import { fr } from 'date-fns/locale';
 import { FileText, ClipboardCheck, History, Loader2 } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { base44 } from '@/api/base44Client';
-import Header from '@/components/seminaire/Header';
+import Header from "@/components/seminaire/header.jsx";
 import ProcedureTab from '@/components/seminaire/ProcedureTab';
 import ChecklistTab from '@/components/seminaire/ChecklistTab';
 
